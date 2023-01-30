@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+body{
+    font-size:14px;
+    line-height: 20px;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black
+}
+
+
+.member{
+    width: 400px;
+    margin: auto;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.member .logo{
+    display: block;
+    margin :50px auto;
+}
+
+.member .field{
+    margin :5px 0; 
+}
+
+.member b{
+    display: block; 
+    margin-bottom: 5px;
+}
+
+.member input:not(input[type=radio]),.member select{
+    border: 1px solid #dadada;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.field.birth div{ 
+    display: flex;
+    margin: 10px;
+}
+
+
+.field.tel-number div {
+    display: flex;
+}
+
+.field.tel-number div input:nth-child(1){
+    flex:2;
+}
+
+.field.tel-number div input:nth-child(2){
+    flex:1;
+}
+
+.field.gender div{
+    border: 1px solid rgba(164, 162, 162, 0.843);
+    padding: 15px 5px;
+    background-color: white;
+}
+
+
+@media (max-width:768px) {
+    .member{
+        width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+    <body>
+    
+        <div class="member">
+            <a href="index.html"><img class="logo" src="img/login_logo.PNG"></a>
+            <div class="field">
+                <b>아이디</b>
+                <span class="placehold-text"><input type="text"></span>
+            </div>
+            <div class="field">
+                <b>비밀번호</b>
+                <input class="userpw" type="password">
+            </div>
+            <div class="field">
+                <b>비밀번호 재확인</b>
+                <input class="userpw-confirm" type="password">
+            </div>
+            <div class="field">
+                <b>이름</b>
+                <input type="text">
+            </div>
+            <div class="field birth">
+                <b>생년월일</b>
+                <div>
+                    <input type="text" placeholder="년(4자)">                
+                    <select>
+                        <option value="">1월</option>
+                        <option value="">2월</option>
+                        <option value="">3월</option>
+                        <option value="">4월</option>
+                        <option value="">5월</option>
+                        <option value="">6월</option>
+                        <option value="">7월</option>
+                        <option value="">8월</option>
+                        <option value="">9월</option>
+                        <option value="">10월</option>
+                        <option value="">11월</option>
+                        <option value="">12월</option>
+                    </select>
+                    <input type="text" placeholder="일">
+                </div>
+            </div>
+            <div class="field gender">
+                <b>성별</b>
+                <div>
+                    <span><input type="radio" name="gender">남자</span>
+                    <span><input type="radio" name="gender">여자</span>
+                </div>
+            </div> 
+            <div class="field tel-number">
+                <b>휴대전화</b>
+                <select>
+                    <option value="">대한민국 +82</option>
+                </select>
+                <div>
+                    <input type="tel" placeholder="전화번호 입력">
+                    <input type="button" value="인증번호 받기">
+                </div>
+                <input type="text" placeholder="인증번호를 입력하세요">
+            </div>
+            <input type="submit" value="가입하기">
+    </body>
+    
+</body>
+</html>
